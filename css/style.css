@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+}
+
+.navbar {
+    background-color: #4e220c;
+}
+
+.Logo {
+    padding-right: 2%;
+    padding-left: 1%;
+}
+
+.logo {
+    height: 100px;
+}
+
+.collapse.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#carouselExampleIndicators {
+    object-fit: contain;
+    height: 60vh;
+    width: 50vw;
+    margin-top: 5%;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenes {
+    object-fit: contain;
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+    border-radius: 5%;
+    width: 20vw;
+    height: 24vw;
+}
+
+.texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+
+/*Menu Caliente, Frio, Bebidas*/
+
+.comida_caliente2_div {
+    margin-top: 5%;
+    width: 30vw;
+    height: 45vh;
+    object-fit: contain;
+}
+
+.comida_caliente2 {
+    border-radius: 2%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu_caliente {
+    margin-top: 2%;
+    color: white;
+}
+
+.comida {
+    margin-top: 2%;
+    padding-right: 6%;
+    color: white;
+}
+
+.precio {
+    margin-top: 2%;
+    padding-left: 6%;
+    color: white;
+}
+
+
+/*Columnas*/
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.column-2 {
+    width: 50%;
+}
+
+.column-3 {
+    width: 33, 333%;
+    margin-top: 7%;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    #carouselExampleIndicators {
+        object-fit: contain;
+        height: 30vh;
+        width: 60vw;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    .column-3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img1 {
+        border-radius: 5%;
+        width: 36vw;
+        height: 30vw;
+    }
+    .comida_caliente2_div {
+        margin-top: 10%;
+        width: 60vw;
+        height: 35vh;
+        object-fit: contain;
+    }
+}
