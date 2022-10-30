@@ -8,18 +8,18 @@
     <title>Food Truck</title>
     <!-- Link Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh5U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
-<body>
+<body style="background: linear-gradient(rgb(189, 189, 189), rgb(103, 103, 103), rgb(54, 54, 54), rgb(7, 7, 7));">
 
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background: rgb(255, 255, 255);">
+
         <div class="Logo">
             <img class="logo" src="./img/logo.png" alt="logo">
         </div>
@@ -30,7 +30,7 @@
 
         </a>
         <div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
         </div>
@@ -39,18 +39,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-                <li class="nav-item ">
-                    <a class="nav-link" href="#img1">
+                <li class="nav-item">
+                    <a class="nav-link" href="Cataleg/comida_caliente.html">
                         <h5>Comida Caliente</h5>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#img2">
+                    <a class="nav-link" href="Cataleg/comida_fria.html">
                         <h5>Comida Fría</h5>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#img3">
+                    <a class="nav-link" href="Cataleg/bebidas.html">
                         <h5>Bebidas</h5>
                     </a>
                 </li>
@@ -60,16 +60,11 @@
 
 
     </nav>
-
-
-
-
-    <!-- Slider -->
+    <!-- Slider  -->
 
     <div class="row">
 
         <div class="column-1">
-
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -78,13 +73,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="./img/Hamburguesa_slider.jpg" alt="First slide">
+                        <img class="d-block w-100" src="img/Food_truck_1.png" alt="First slide">
                     </div>
                     <div class="carousel-item ">
-                        <img class="d-block w-100" src="./img/Perrito_slider.jpg" alt="Second slide">
+                        <img class="d-block w-100 " src="img/Food_truck_2.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item ">
-                        <img class="d-block w-100" src="./img/Sandwitch_slider.jpg" alt="Third slide">
+                        <img class="d-block w-100 " src="img/Food_truck_3.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -96,37 +91,61 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
         </div>
+
     </div>
 
 
     <div class="row">
 
-        <div class="column-3">
-            <div class="imagenes" id="img1">
-
-                <a href="./Cataleg/comida_caliente.html"><img class="img1" src="./img/Comida_Caliente.jpg" alt=""></a>
-                <span class="texto-encima"> <h3>Comida Caliente</h3></span>
-
-            </div>
+        <div class="column-4">
+            <img class="imagenes" src="img/PerritoCaliente.jpg" alt="">
         </div>
-        <div class="column-3">
-            <div class="imagenes" id="img2">
-                <a href="./Cataleg/comida_fria.html"><img class="img1" src="./img/Comida_Fria.png" alt=""></a>
-                <span class="texto-encima"> <h3>Comida Fria</h3></span>
 
-            </div>
+        <div class="column-4">
+            <img class="imagenes" src="img/vinos.avif" alt="">
         </div>
-        <div class="column-3">
-            <div class="imagenes" id="img3">
-                <a href="./Cataleg/bebidas.html"><img class="img1" src="./img/Bebida.jpg" alt=""></a>
-                <span class="texto-encima"> <h3>Bebidas</h3></span>
 
-            </div>
+        <div class="column-4">
+            <img class="imagenes" src="img/hamburguesa.jpg" alt="">
         </div>
+
+        <div class="column-4">
+            <img class="imagenes" src="img/cubatas.jpg" alt="">
+        </div>
+
+
+
 
     </div>
+
+    <div class="row">
+
+        <div class="column-4">
+            <img class="imagenes" src="img/refrescos.webp" alt="">
+        </div>
+
+        <div class="column-4">
+            <img class="imagenes" src="img/bocatas.jpg" alt="">
+        </div>
+
+        <div class="column-4">
+            <img class="imagenes" src="img/cocteles.webp" alt="">
+        </div>
+
+        <div class="column-4">
+            <img class="imagenes" src="img/sandwitch.jpg" alt="">
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 
 </body>
 

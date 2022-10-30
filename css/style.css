@@ -1,9 +1,6 @@
 body {
     background-color: black;
-}
-
-.navbar {
-    background-color: #4e220c;
+    font-family: 'Fasthand', cursive;
 }
 
 .Logo {
@@ -23,70 +20,30 @@ body {
 
 #carouselExampleIndicators {
     object-fit: contain;
-    height: 60vh;
-    width: 50vw;
+    height: 80%;
+    width: 60%;
     margin-top: 5%;
 }
 
 .carousel-inner {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
+    width: 100%;
 }
 
 .imagenes {
-    object-fit: contain;
-    position: relative;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img1 {
-    border-radius: 5%;
-    width: 20vw;
-    height: 24vw;
-}
-
-.texto-encima {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 2%;
 }
 
 
 /*Menu Caliente, Frio, Bebidas*/
 
-.comida_caliente2_div {
-    margin-top: 5%;
-    width: 30vw;
-    height: 45vh;
-    object-fit: contain;
-}
-
-.comida_caliente2 {
+.contenido_precios {
+    padding-top: 10%;
+    padding-bottom: 10%;
     border-radius: 2%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.menu_caliente {
-    margin-top: 2%;
-    color: white;
-}
-
-.comida {
-    margin-top: 2%;
-    padding-right: 6%;
-    color: white;
-}
-
-.precio {
-    margin-top: 2%;
-    padding-left: 6%;
-    color: white;
 }
 
 
@@ -94,49 +51,103 @@ body {
 
 .row {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2%;
 }
 
 .column-1 {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-left: 5%;
 }
 
-.column-2 {
-    width: 50%;
-}
-
-.column-3 {
-    width: 33, 333%;
-    margin-top: 7%;
-    margin-right: 4%;
+.column-4 {
+    width: 20%;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-top: 2%;
     margin-left: 4%;
-    margin-bottom: 3%;
 }
 
-@media only screen and (max-width: 600px) {
+.column-4_2 {
+    width: 22%;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-top: 7%;
+    display: flex;
+}
+
+.column-4_2#img1 {
+    margin-left: 6%;
+}
+
+.column-4_3 {
+    width: 22%;
+    box-sizing: border-box;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(255, 255, 255), rgb(163, 163, 163), rgb(104, 104, 104), rgb(40, 40, 40));
+}
+
+.column-4_3#img1 {
+    margin-left: 6%;
+}
+
+@media only screen and (max-width: 1080px) {
+    .navbarNav {
+        display: none;
+    }
     #carouselExampleIndicators {
-        object-fit: contain;
-        height: 30vh;
-        width: 60vw;
+        height: auto;
+        width: auto;
         margin-top: 5%;
-        margin-bottom: 2%;
     }
-    .column-3 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .column-4 {
+        width: 46%;
+        margin-top: 2%;
+        margin-left: 4%;
     }
-    .img1 {
-        border-radius: 5%;
-        width: 36vw;
-        height: 30vw;
+    .column-4_2 {
+        width: 45%;
+        margin-top: 2%;
     }
-    .comida_caliente2_div {
-        margin-top: 10%;
-        width: 60vw;
-        height: 35vh;
-        object-fit: contain;
+    .column-4_2#img3 {
+        margin-left: 6%;
+    }
+    .column-4_3 {
+        width: 45%;
+    }
+    .column-4_3#img3 {
+        margin-left: 6%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .column-4 {
+        width: 95%;
+        box-sizing: border-box;
+        object-fit: cover;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    .column-4_2 {
+        width: 93%;
+        margin-top: 2%;
+    }
+    .column-4_2#img2,
+    #img3,
+    #img4 {
+        margin-left: 6%;
+    }
+    .column-4_3 {
+        width: 93%;
+    }
+    .column-4_3#img2,
+    #img3,
+    #img4 {
+        margin-left: 6%;
     }
 }
